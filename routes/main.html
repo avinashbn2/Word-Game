@@ -1,0 +1,35 @@
+<div >
+    <div id="overlay" ng-click="toggleOverlay()"><div id="text">{{overlayMessage}}</div> </div>
+
+    <div class="row">
+
+    <div class="col-md-4 col-md-offset-4"> <center><h1><span class="label label-default">{{timeLeft | timeFilter }}</span></h1></center></div>
+    <br/>
+    <div class="col-md-4"></div>
+    <div class="row "  >
+<div class="col-md-4 col-md-offset-4">
+    <div class="top-buffer">
+    <h3 >Words to find: </h3><h3> <span class="label label-primary " ng-repeat="i in chosenWords"> {{i}} </span></h3>
+    </div>
+        </div>
+    <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+
+    <div class="col-md-4 col-md-offset-4" >
+    <table class="playgrid ">
+        <tr ng-repeat="row in wordPuzzle.rows">
+            <td class="tile"  ng-repeat="spot in row.spots track by $index" ng-class="spot.color" ng-mouseup="removeFlag()" ng-mousedown="setFlag($parent.$index,$index)" ng-mousemove="drawColor($parent.$index, $index)">
+                {{spot.letter}}
+
+            </td>
+        </tr>
+
+
+
+    </table>
+    </div>
+
+    <div class="col-md-4" ><a href="#!/score">SCORE</a></div>
+    </div>
+</div>

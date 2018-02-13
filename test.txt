@@ -1,0 +1,1 @@
+[{"score":273,"name":"6/13/2017","$$hashKey":"object:108"},{"score":0,"name":"2017/06/13T18:17:09.697Z","$$hashKey":"object:107"},{"score":0,"name":"2017/06/13T18:19:00.057Z","$$hashKey":"object:110"},{"score":231,"name":"2017/06/13T18:20:13.547Z","$$hashKey":"object:108"},{"score":36,"name":"asdasd"},{"score":0,"name":"2017/07/20T23:10:31.231Z"}]

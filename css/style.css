@@ -1,0 +1,87 @@
+
+.tile{
+  
+  width:45px;
+  height:45px;
+  background-color:#78bec5;
+  display:inline-block;
+  /*margin:-3px 0px;*/
+  /*margin: 5px;*/
+  cursor: pointer;
+  color: #fff;
+  border-radius: 14px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+  font-size: 24px;
+  margin:5px;
+
+
+}
+.tile:hover{
+  background-color: #3d4250
+}
+div{
+  margin:0px 0px;
+}
+.green{
+  background-color:#ecaf4f;
+}
+
+.playgrid {
+  /*
+    to disable mouse selection while clicking tiles
+  */
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  margin-left: -40px; 
+  margin-top: 60px;
+  width: 600px; 
+  padding: 5px;
+  
+
+}
+h1{
+  display: table;
+  margin: auto;
+}
+.top-buffer {
+  margin-top: 20px;
+  margin-left: -30px;
+
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+span {
+  padding: 4px;
+}
+.keywords {
+  text-align: left;
+  width: 400px;
+  display: block;
+}
